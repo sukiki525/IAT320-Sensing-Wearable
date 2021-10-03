@@ -1,0 +1,16 @@
+int Grove_Water_Sensor = 10; 
+int LED = 3; 
+
+void setup() {
+   pinMode(Grove_Water_Sensor, INPUT); 
+   pinMode(LED, OUTPUT); 
+}
+
+void loop() {
+   
+   if( digitalRead(Grove_Water_Sensor) == LOW) {
+      digitalWrite(LED,HIGH);
+   }else {
+      digitalWrite(LED,LOW);
+   }
+}
